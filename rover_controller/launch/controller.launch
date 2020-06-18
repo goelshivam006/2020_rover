@@ -1,0 +1,5 @@
+<launch>
+	<node name="Velocity_controller" pkg="rover_controller" type="Velocity_controller.py" />
+	<node name="Position_controller" pkg="rover_controller" type="Position_controller.py" />
+</launch>
+
