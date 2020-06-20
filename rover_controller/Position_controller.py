@@ -38,13 +38,13 @@ def assign(msg):
     elif(turn>0):
 	turn-=pi
     if(pi-abs(turn)<0.1):
-	if(theta<0):
-		turn=-pi
-	else:
-		turn =pi
-    rospy.loginfo("x :%f   y :%f  theta :%f  turn: %f   goal_x:  %f",x,y,theta,turn,goal_x)
-    if (((inc_x*inc_x)+(inc_y*inc_y))<=0.05):
-	speed.angular.z=0.0
+	   if(theta<0):
+		  turn=-pi
+	   else:
+		  turn =pi
+    rospy.loginfo("x :%f   y :%f  theta :%f  turn: %f",x,y,theta,turn)
+    if (((inc_x*inc_x)+(inc_y*inc_y))<=0.01):
+        speed.angular.z=0.0
         speed.linear.x=0.0
     elif(abs(turn-theta)>0.1):
         speed.angular.z=100.0*(-turn+theta)
