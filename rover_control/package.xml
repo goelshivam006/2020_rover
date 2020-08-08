@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rover_control</name>
+  <version>0.0.0</version>
+  <description>The rover_control package</description>
+
+  <maintainer email="pushpans@iitk.ac.in">Pushpanshu Tripathi</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+
+</package>
